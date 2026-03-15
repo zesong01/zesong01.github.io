@@ -21,7 +21,7 @@ const SKILLS = [
 /* ═══════════════════ BILINGUAL CONTENT ═══════════════════ */
 const T = {
   en: {
-    sidebar: { name: "Zesong Guo", title: "LLM / NLP Algorithm Engineer", loc: "China · USA", aff: "Northeastern University", phone: "178 4382 1169" },
+    sidebar: { name: "Zesong Guo", title: "LLM / NLP Algorithm Engineer", loc: "China · USA", aff: "Northeastern University", phone: "🇨🇳 178 4382 1169", phone2: "🇺🇸 +1 (206) 227-5159" },
     nav: ["About Me", "Skills", "Projects", "Experience", "Publications"],
     navIds: ["about", "skills", "projects", "experience", "publications"],
     about: {
@@ -89,7 +89,7 @@ const T = {
     },
   },
   zh: {
-    sidebar: { name: "郭泽嵩", title: "大模型 / NLP 算法工程师", loc: "中国 · 美国", aff: "东北大学 (Northeastern University)", phone: "178 4382 1169" },
+    sidebar: { name: "郭泽嵩", title: "大模型 / NLP 算法工程师", loc: "中国 · 美国", aff: "东北大学 (Northeastern University)", phone: "🇨🇳 178 4382 1169", phone2: "🇺🇸 +1 (206) 227-5159" },
     nav: ["关于我", "技术栈", "项目经历", "教育与工作", "学术成果"],
     navIds: ["about", "skills", "projects", "experience", "publications"],
     about: {
@@ -185,6 +185,7 @@ function Sidebar({ t, lang, setLang }) {
         <span>📍 {t.sidebar.loc}</span>
         <span>🏫 {t.sidebar.aff}</span>
         <span>📞 {t.sidebar.phone}</span>
+        <span>📞 {t.sidebar.phone2}</span>
       </div>
       <div style={S.socialRow}>
         {LINKS.map((l, i) => (
